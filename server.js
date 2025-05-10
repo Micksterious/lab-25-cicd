@@ -8,6 +8,9 @@ const options = {
   cert: fs.readFileSync('./certs/cert.pem')
 };
 
+res.send('CI/CD update works! ✅');
+
+
 app.get('/', (req, res) => {
   res.send('Hello from Lab 25 CI/CD project!');
 });
